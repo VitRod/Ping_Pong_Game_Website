@@ -22,3 +22,9 @@ let paddleContact = false;
 let ballX = 250;
 let ballY = 350;
 const ballRadius = 5;
+
+// Speed
+let speedY;
+let speedX;
+let trajectoryX;
+let computerSpeed;
