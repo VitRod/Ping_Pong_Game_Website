@@ -6,12 +6,12 @@ body {
     justify-content: center;
     font-family: "Courier New", Courier, monospace;
   }
-
+  
   canvas {
     margin-top: 25px;
     z-index: 10;
   }
-
+  
   .game-over-container {
     position: absolute;
     top: 50%;
@@ -28,7 +28,7 @@ body {
     align-items: center;
     color: whitesmoke;
   }
-
+  
   button {
     cursor: pointer;
     color: rgb(0, 0, 0);
@@ -52,9 +52,9 @@ body {
   button:focus {
     outline: none;
   }
-
+  
   /* Montior and Larger */
-@media screen and (min-width: 1800px) {
+  @media screen and (min-width: 1800px) {
     canvas {
       margin-top: 100px;
     }
@@ -63,9 +63,9 @@ body {
       margin-top: -19px;
     }
   }
-
+  
   /* Large Smartphone (Vertical) */
-@media screen and (max-width: 500px) {
+  @media screen and (max-width: 500px) {
     canvas {
       width: 100%;
       height: 700px;
@@ -77,5 +77,4 @@ body {
       height: 700px;
     }
   }
-  
   
