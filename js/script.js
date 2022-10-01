@@ -84,4 +84,12 @@ function renderCanvas() {
     context.font = '40px Courier New sans-serif';
     context.strokeText('PONG GAME', 260, 340);
   }
+
+  // Create Canvas Element
+function createCanvas() {
+    canvas.width = width;
+    canvas.height = height;
+    body.appendChild(canvas);
+    renderCanvas();
+  }
   
