@@ -17,3 +17,8 @@ let paddleBottomX = 225;
 let paddleTopX = 225;
 let playerMoved = false;
 let paddleContact = false;
+
+// Ball
+let ballX = 250;
+let ballY = 350;
+const ballRadius = 5;
