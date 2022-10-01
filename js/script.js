@@ -39,3 +39,10 @@ if (isMobile.matches) {
     speedX = speedY;
     computerSpeed = 3;
   }
+
+  // Score
+let playerScore = 0;
+let computerScore = 0;
+const winningScore = 7;
+let isGameOver = true;
+let isNewGame = true;
