@@ -92,4 +92,22 @@ function createCanvas() {
     body.appendChild(canvas);
     renderCanvas();
   }
+
+  // Reset Ball to Center
+function ballReset() {
+    ballX = width / 2;
+    ballY = height / 2;
+    speedY = -3;
+    paddleContact = false;
+  }
+
+  // Adjust Ball Movement
+function ballMove() {
+    // Vertical Speed
+    ballY += -speedY;
+    // Horizontal Speed
+    if (playerMoved && paddleContact) {
+      ballX += speedX;
+    }
+  }
   
