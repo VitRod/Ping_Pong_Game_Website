@@ -46,3 +46,42 @@ let computerScore = 0;
 const winningScore = 7;
 let isGameOver = true;
 let isNewGame = true;
+
+
+// Render Everything on Canvas
+function renderCanvas() {
+    // Canvas Background
+    context.fillStyle = '#17202A';
+    context.fillRect(0, 0, width, height);
+  
+    // Paddle Color
+    context.fillStyle = '#F9EBEA';
+  
+    // Player Paddle (Bottom)
+    context.fillRect(paddleBottomX, height - 20, paddleWidth, paddleHeight);
+  
+    // Computer Paddle (Top)
+    context.fillRect(paddleTopX, 10, paddleWidth, paddleHeight);
+  
+    // Dashed Center Line
+    context.beginPath();
+    context.setLineDash([4]);
+    context.moveTo(0, 350);
+    context.lineTo(500, 350);
+    context.strokeStyle = 'grey';
+    context.stroke();
+  
+    // Ball
+    context.beginPath();
+    context.arc(ballX, ballY, ballRadius, 2 * Math.PI, false);
+    context.fillStyle = 'white';
+    context.fill();
+  
+    // Score
+    context.font = '32px Courier New';
+    context.fillText(playerScore, 20, canvas.height / 2 + 50);
+    context.fillText(computerScore, 20, canvas.height / 2 - 30);
+    context.font = '40px Courier New sans-serif';
+    context.strokeText('PONG GAME', 260, 340);
+  }
+  
