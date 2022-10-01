@@ -52,4 +52,15 @@ body {
   button:focus {
     outline: none;
   }
+
+  /* Montior and Larger */
+@media screen and (min-width: 1800px) {
+    canvas {
+      margin-top: 100px;
+    }
+  
+    .game-over-container {
+      margin-top: -19px;
+    }
+  }
   
